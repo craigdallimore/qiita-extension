@@ -1,0 +1,22 @@
+{
+  "name": "Qiita Extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Fixes CSS",
+  "homepage_url": "https://github.com/craigdallimore/qiita-extension",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://qiita.com/*"
+      ],
+      "css": [
+        "src/fix.css"
+      ]
+    }
+  ]
+}
